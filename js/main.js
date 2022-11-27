@@ -12,14 +12,30 @@ $(function () {
 
 
 
+    //=====MENU SEARCH=====
+    $(".search").click(function () {
+        $(".wsus__search_form").addClass("show");
+    });
+
+    $(".close_search").click(function () {
+        $(".wsus__search_form").removeClass("show");
+    });
 
 
 
+    //=====RADIAL PROGRESS BAR=====
+    $("[id$='circle']").percircle();
 
 
 
+    //=====PROGRESS BAR=====
+    $(".progress-bar").ProgressBar();
 
 
+
+    $(".list_plus").click(function () {
+        $(".hidden_text").toggleClass("show");
+    });
 
 
 

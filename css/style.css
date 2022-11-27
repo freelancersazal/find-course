@@ -55,10 +55,10 @@ img {
 input,
 textarea {
     width: 100%;
-    padding: 8px 20px;
+    padding: 15px 20px;
     outline: none;
     resize: none;
-    border: 1px solid var(--colorPrimary);
+    border: 2px solid var(--colorPrimary);
     border-radius: 2px;
     font-size: 16px;
     font-weight: 400;
@@ -83,6 +83,7 @@ button {
     --colorSecondary: #ff3d24;
     --colorBlack: #000;
     --colorWhite: #fff;
+    --paraColor: #575656;
     --bodyFont: 'Lato', sans-serif;
 
 }
@@ -93,17 +94,9 @@ button {
 
 
 
-
-
-
-
-
-
-
 /*===========================
     COMMON CSS END
 ===========================*/
-
 
 
 /*===========================
@@ -111,11 +104,15 @@ button {
 ===========================*/
 .wsus__topbar {
     background: var(--colorWhite);
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .wsus__topbar_search {
@@ -229,15 +226,12 @@ button {
 ===========================*/
 
 
-
 /*===========================
     HOME SEARCH START
 ===========================*/
 .wsus__home_search {
-    padding-top: 80px;
+    padding-top: 150px;
 }
-
-.wsus__home_search_logo {}
 
 .wsus__home_search_logo a {
     width: 100%;
@@ -303,28 +297,710 @@ button {
     border-radius: 4px;
 }
 
+.wsus__home__contact p {
+    text-align: center;
+    color: var(--colorBlack);
+}
 
+.wsus__home__contact ul {
+    justify-content: space-evenly;
+}
 
-.wsus__home__contact {}
+.wsus__home__contact ul li a {
+    color: var(--colorPrimary);
+    font-size: 16px;
+}
 
-.wsus__home__contact p {}
-
-.wsus__home__contact ul {}
-
-.wsus__home__contact ul li {}
-
-.wsus__home__contact ul li a {}
-
-.wsus__home__contact ul li a i {}
-
-
-
-
-
+.wsus__home__contact ul li a i {
+    margin-right: 5px;
+    text-shadow: 0px 0px 5px #00000099;
+}
 
 /*===========================
     HOME SEARCH END
 ===========================*/
+
+
+
+/*===========================
+    TRACK RESULT START
+===========================*/
+
+/* MENU START */
+.main_menu {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: var(--colorWhite);
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.main_menu .navbar-brand {
+    margin: 0;
+    padding: 0;
+    max-width: 220px;
+}
+
+.main_menu .navbar-nav .nav-link {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 70px;
+    color: var(--colorPrimary);
+    margin-left: 25px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-link:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__search_form {
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #000000ba;
+    z-index: 9999;
+    transform: scaleY(0);
+    transform-origin: top;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+}
+
+.wsus__search_form form {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.wsus__search_form form .close_search {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: var(--colorPrimary);
+    background: var(--colorWhite);
+    font-size: 25px;
+    border-radius: 50%;
+    top: -70px;
+    right: 0;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__search_form form .close_search:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.wsus__search_form input {
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.wsus__search_form button {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    background: var(--colorPrimary);
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 999;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__search_form button:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__search_form.show {
+    transform: scale(1);
+}
+
+/* MENU END */
+
+.wsus__page_heading {
+    background: var(--colorPrimary);
+}
+
+.wsus__page_heading_text {
+    position: relative;
+    padding: 40px 0px 50px 0px;
+}
+
+/* .wsus__page_heading_text a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: var(--colorWhite);
+} */
+
+.wsus__page_heading_text h1 {
+    color: var(--colorWhite);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.wsus__page_heading_text p {
+    color: var(--colorWhite);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wsus__result_offer_status_area {
+    border: 1px solid var(--colorPrimary);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.wsus__result_offer_status_area h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--colorBlack);
+    border-bottom: 2px solid var(--colorPrimary);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.wsus__result_offer_summary ul li {
+    border-bottom: 1px dashed var(--colorPrimary);
+    padding: 20px 0px;
+}
+
+.wsus__result_offer_summary ul li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.wsus__result_offer_summary ul li,
+.wsus__result_offer_summary ul li span,
+.wsus__result_offer_summary ul li b {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--colorBlack);
+}
+
+.wsus__result_offer_summary ul li span {
+    display: inline-block;
+    width: 230px;
+}
+
+.wsus__result_offer_summary ul li b {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    padding: 4px 20px;
+}
+
+.wsus__result_offer_summary ul li a {
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    padding: 5px 30px 4px 30px;
+    border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__result_offer_summary ul li a:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__result_visa_offer_status_area {
+    background: var(--colorPrimary);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.wsus__result_visa_offer_status_area h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 23px;
+    color: #e9ff00;
+    border-bottom: 2px solid #e9ff00;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.wsus__result_visa_offer_status_area ul li,
+.wsus__result_visa_offer_status_area ul li span,
+.wsus__result_visa_offer_status_area ul li b {
+    color: var(--colorWhite);
+    border-color: var(--colorWhite);
+}
+
+.wsus__visa_offer_swsus__result_visa_offer_status_areatatus_area ul li {
+    border-bottom: 1px dashed var(--colorWhite);
+}
+
+.wsus__result_visa_offer_status_area ul li a {
+    background: var(--colorBlack);
+}
+
+.wsus__result_visa_offer_status_area ul li b {
+    padding: 0;
+}
+
+.wsus__result_application_history {
+    border: 1px dashed var(--colorPrimary);
+    padding: 30px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.wsus__result_application_history h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.result_history_table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.result_history_table tr th {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--colorPrimary);
+    padding: 15px 0px;
+}
+
+.result_history_table tr td {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    border-top: 1px dashed var(--colorPrimary);
+    padding: 15px 0px;
+}
+
+.result_history_table .sl {
+    min-width: 50px;
+    width: 10%;
+}
+
+.result_history_table .date {
+    min-width: 80px;
+    width: 15%;
+}
+
+.result_history_table .status {
+    min-width: 240px;
+    width: 25%;
+}
+
+.result_history_table .remark {
+    min-width: 330px;
+    width: 50%;
+}
+
+/*===========================
+    TRACK RESULT END
+===========================*/
+
+
+
+/*===========================
+    TRACK APPLICATION START
+===========================*/
+.wsus__track_application {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.wsus__track_application .logo {
+    max-width: 200px;
+}
+
+.wsus__track_application_form {
+    padding: 49px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.wsus__track_application_form h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--colorBlack);
+    margin: 40px 0px 20px 0px;
+}
+
+.wsus__track_application_form form {}
+
+.wsus__track_application_form form input {
+    border: 1px solid var(--colorPrimary);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.wsus__track_application_form .form-check {
+    text-align: left;
+    font-size: 16px;
+    color: var(--colorBlack);
+}
+
+.wsus__track_application_form .form-check input {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.wsus__track_application_form .form-check label {}
+
+.wsus__track_application_form form button {
+    width: 100%;
+    background: var(--colorPrimary);
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    border-radius: 3px;
+    padding: 10px 0px;
+    font-weight: 600;
+    margin: 20px 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__track_application_form form button:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__track_application_form form p {
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.wsus__track_application_form form p a {
+    color: var(--colorPrimary);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__track_application_form form p a:hover {
+    color: var(--colorBlack);
+}
+
+/*===========================
+    TRACK APPLICATION END
+===========================*/
+
+
+
+/*===========================
+    BROWSE COURSES START
+===========================*/
+.wsus__browse_course {}
+
+
+.wsus__browse_course_search {}
+
+.wsus__browse_course_search form {
+    position: relative;
+}
+
+.wsus__browse_course_search form span {
+    position: absolute;
+    top: 50%;
+    right: 63px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #706e6e;
+    border-right: 2px dashed #706e6e;
+    padding-right: 25px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__browse_course_search form span:hover {
+    color: var(--colorBlack);
+}
+
+
+.wsus__browse_course_search form input {
+    border-radius: 30px;
+    padding: 15px 35px;
+    border: 1px solid #706e6e;
+}
+
+.wsus__browse_course_search form button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: none;
+    font-size: 25px;
+    color: #706e6e;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__browse_course_search form button:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__browse_course_sidebar h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--colorBlack);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: var(--colorBlack);
+}
+
+.wsus__browse_course_sidebar_add {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+
+
+
+.wsus__browse_course_list_area {}
+
+.wsus__browse_course_list_area ul {}
+
+.wsus__browse_course_list_area ul .single_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: 1px solid var(--colorPrimary);
+    padding-bottom: 10px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.wsus__browse_course_list_area .item {
+    width: 31%;
+    position: relative;
+}
+
+.wsus__browse_course_list_area .item .title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--paraColor);
+    margin-bottom: 7px;
+    display: block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__browse_course_list_area .item .title:hover {
+    color: var(--colorPrimary);
+}
+
+.wsus__browse_course_list_area .item span {
+    color: var(--paraColor);
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__browse_course_list_area .item i {
+    color: var(--paraColor);
+    margin-left: 21px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__browse_course_list_area .item i:hover {
+    color: var(--colorPrimary);
+}
+
+.wsus__browse_course_list_area .item i.fa-plus {
+    background: var(--paraColor);
+    color: var(--colorWhite);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.wsus__browse_course_list_area .item i.fa-plus:hover {
+    background: var(--colorPrimary);
+}
+
+.wsus__browse_course_list_area ul .single_list:hover .university {
+    color: var(--colorPrimary);
+}
+
+.wsus__browse_course_list_area ul .single_list:hover i {
+    opacity: 1;
+}
+
+.hidden_text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 100px;
+    overflow-y: auto;
+    background: var(--colorWhite);
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    width: 150px;
+    padding: 0px 15px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.hidden_text p {
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.hidden_text::-webkit-scrollbar {
+    scrollbar-width: thin !important;
+    background: #010f1c;
+    width: 3px;
+}
+
+.hidden_text::-webkit-scrollbar-thumb {
+    background: var(--colorPrimary);
+}
+
+.hidden_text.show {
+    opacity: 1;
+}
+
+
+
+.wsus__pagination {}
+
+.wsus__pagination ul {}
+
+.wsus__pagination ul li {}
+
+.wsus__pagination ul li a {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0;
+    margin-right: 15px;
+    background: var(--colorWhite) !important;
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__pagination ul li a i {
+    font-size: 11px;
+}
+
+.wsus__pagination ul li a:hover,
+.wsus__pagination ul li a.active {
+    color: var(--colorBlack);
+}
+
+/*===========================
+    BROWSE COURSES END
+===========================*/
+
+
+
+
+
+
 
 
 

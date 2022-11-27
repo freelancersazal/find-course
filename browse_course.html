@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Find Course</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/percircle.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!--============================
+        MENU START
+    =============================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Brows by Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">University</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help Desk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
+                        <div class="wsus__search_form">
+                            <form>
+                                <span class="close_search"><i class="far fa-times"></i></span>
+                                <input type="text" placeholder="Search . . .">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--============================
+        MENU END
+    =============================-->
+
+
+    <!--============================
+        BROWSE COURSES START
+    =============================-->
+    <section class="wsus__browse_course mt_70 mb_50">
+        <div class="wsus__page_heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wsus__page_heading_text">
+                            <!-- <a href="#"><i class="fas fa-home-lg-alt"></i></a> -->
+                            <h1>Browse Courses</h1>
+                            <p>TYou can browse all courses or filter results based on Study fields, Study Level, and
+                                universities type.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wsus__browse_course_search mt_70">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <span><i class="fal fa-times"></i></span>
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fal fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="wsus__browse_course_area mt_30">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="wsus__browse_course_sidebar">
+                            <h4>Sort By</h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <select id="select_js">
+                                        <option value="">study field</option>
+                                        <option value="">Red</option>
+                                        <option value="">Black</option>
+                                        <option value="">Orange</option>
+                                        <option value="">Rose Gold</option>
+                                        <option value="">Pink</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <select id="select_js2">
+                                        <option value="">study lebel</option>
+                                        <option value="">Red</option>
+                                        <option value="">Black</option>
+                                        <option value="">Orange</option>
+                                        <option value="">Rose Gold</option>
+                                        <option value="">Pink</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <select id="select_js3">
+                                        <option value=""> type of institutes </option>
+                                        <option value="">Red</option>
+                                        <option value="">Black</option>
+                                        <option value="">Orange</option>
+                                        <option value="">Rose Gold</option>
+                                        <option value="">Pink</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <select id="select_js4">
+                                        <option value=""> intakes </option>
+                                        <option value="">Red</option>
+                                        <option value="">Black</option>
+                                        <option value="">Orange</option>
+                                        <option value="">Rose Gold</option>
+                                        <option value="">Pink</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt_30">
+                                    <div class="wsus__browse_course_sidebar_add">
+                                        <img src="images/offer.gif" alt="add" class="img-fluid w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="wsus__browse_course_list_area">
+                            <ul>
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="hidden_text">
+                                        <p>year: 2000</p>
+                                        <p>year: 2002</p>
+                                        <p>year: 2010</p>
+                                        <p>year: 2018</p>
+                                        <p>year: 2020</p>
+                                        <p>year: 2021</p>
+                                        <p>year: 2022</p>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+
+                                <li class="single_list">
+                                    <div class="item">
+                                        <a class="title" href="#">Bachelor in Accounting</a>
+                                        <span class="university">offered by : MSU University </span>
+                                    </div>
+                                    <div class="item">
+                                        <span>Fee: MYR 31,071.00</span>
+                                        <i class="far fa-plus list_plus"></i>
+                                    </div>
+                                    <div class="item">
+                                        <span>Level:
+                                            Bachelor Degree</span>
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <nav class="wsus__pagination mt_50">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="fas fa-chevron-double-left"></i> Previous
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            next <i class="fas fa-chevron-double-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--============================
+        BROWSE COURSES END
+    =============================-->
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/percircle.js"></script>
+    <script src="js/progress-bar.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
