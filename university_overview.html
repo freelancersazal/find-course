@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Find Course</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/percircle.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!--============================
+        MENU START
+    =============================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Brows by Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">University</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help Desk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
+                        <div class="wsus__search_form">
+                            <form>
+                                <span class="close_search"><i class="far fa-times"></i></span>
+                                <input type="text" placeholder="Search . . .">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <select id="select_js">
+                    <option value="">English</option>
+                    <option value="">Arabic</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <!--============================
+        MENU END
+    =============================-->
+
+
+    <!--============================
+        UNIVERSITY OVERVIEW START
+    =============================-->
+    <section class="wsus__university_overview mt_70">
+        <div class="wsus__university_overview_banner">
+            <img src="images/university_img.png" alt="university" class="img-fluid w-100">
+        </div>
+
+        <div class="container mt_70">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wsus__university_overview_header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Overview</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Courses</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Write a Review </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab2" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact2" type="button" role="tab"
+                                    aria-controls="pills-contact2" aria-selected="false">Event</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab3" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact3" type="button" role="tab"
+                                    aria-controls="pills-contact3" aria-selected="false">lovation</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__university_overview_sidebar">
+                        <div class="wsus__university_overview_courses">
+                            <h3>Courses available</h3>
+                            <ul>
+                                <li> Foundation:4</li>
+                                <li>Diploma:31</li>
+                                <li>Bachelor: 28</li>
+                                <li>Master: 15</li>
+                                <li>Phd: 19</li>
+                            </ul>
+                        </div>
+                        <div class="wsus__university_overview_location">
+                            <h3>University Location</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.1042353839701!2d90.36883079291307!3d23.874829580152998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3eecf2c4f29%3A0x855167c0c4a1e497!2sUttara%20Residential%20Model%20Town%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1669628797936!5m2!1sen!2sbd"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="wsus__university_overview_text">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="overview">
+                                    <h2>Management & Science University – MSU</h2>
+                                    <p>Over three exciting decades have gone by and Management & Science University –
+                                        MSU is privileged to play its role in the development of human capital needs at
+                                        the local and international levels. The challenges over the years have made us
+                                        more resolute in our journey towards providing you with the best in higher
+                                        education.
+
+                                        The thirty years have also seen ourselves grew from just a college to a Tier 5
+                                        Excellence rated University. This rating accorded twice to MSU by the Ministry
+                                        of Higher Education of Malaysia has helped propelled MSU to be one of Malaysia’s
+                                        best. Our achievements are aligned to our objective of providing a quality
+                                        driven education and learning experiences that will help shape your future.</p>
+                                    <p>At MSU, we give priority to our graduate’s employability, as such our focus on
+                                        the industry-relevant courses and ensuring that these courses meet current
+                                        trends dictate much of what we have to offer students. Specializations in
+                                        Medicine, Health and Life Science, Nursing, Pharmacy, Business, Management,
+                                        Accounting, Hospitality, Law, Computer Technologies, and Engineering have
+                                        complemented the marketability and the employability of our graduates. A
+                                        complete learning experience goes beyond academic achievements. Relevant
+                                        personal enhancement experiences are also equally important as we mold our
+                                        graduates to be competent professionals.</p>
+                                    <p>Be a part of our self ­enhancement activities aimed towards nurturing your soft­
+                                        skills attributes. From a range of community engagement efforts to activities
+                                        aimed towards appreciating and preserving the environment, you will somehow find
+                                        something to be engaged in while at MSU.
+                                    </p>
+                                    <h2>MOBILITY</h2>
+                                    <p>Our international students from over 40 countries worldwide also add to this
+                                        existing cultural diversity and you can anticipate the interesting campus life
+                                        activities, where cultures and customs collide. Our students are given
+                                        opportunities to gain international exposure while they study here. Similarly,
+                                        international students planning for shorter period of time can also come to
+                                        experience the global mobility program we offer.
+
+                                        The Global Mobility Program (GMP), Global Leadership Program (GLP) and Global
+                                        Internship Program (GIP) allow students to empower their global experience with
+                                        MSU university partners around the world such as the UK, Australia, Japan,
+                                        Korea, Hong Kong, China, Indonesia, Brunei, Sri Lanka, India, Pakistan and more
+                                        as their hub for knowledge.</p>
+                                    <p>The participation of students in these programs strengthens their appreciation
+                                        for social and cultural uniqueness, information sharing and skills, learning and
+                                        teaching systems, collaborative networks, new partners, community service and as
+                                        a ‘small ambassador’ of the State.</p>
+                                    <h2>STUDENT SUPPORT</h2>
+                                    <p>In MSU, the International Student Society supports all international students and
+                                        activities such as:</p>
+                                    <ul>
+                                        <li>Facilitates new students during registration</li>
+                                        <li>Assists international students to get adjusted in the new environment</li>
+                                        <li>Organizes activities that celebrate diversity and cultures across countries
+                                        </li>
+                                        <li>Supports students’ needs around the campus </li>
+                                        <li>Disseminates relevant information where necessary</li>
+                                    </ul>
+                                    <p>There is a place for everyone at MSU, where education is offered through an entry
+                                        system that facilitates admission from all walks of life, locally and
+                                        internationally. We are committed towards providing the journey that will help
+                                        to transform lives and enriching the future for all.</p>
+                                    <p><a href="#">Click here</a> to read latest articles about study in Malaysia.</p>
+                                    <p><a href="#">Click here</a> to visit our facebook page</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="wsus__browse_course_list_area">
+                                    <ul>
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div class="hidden_text">
+                                                <p>year: 2000</p>
+                                                <p>year: 2002</p>
+                                                <p>year: 2010</p>
+                                                <p>year: 2018</p>
+                                                <p>year: 2020</p>
+                                                <p>year: 2021</p>
+                                                <p>year: 2022</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="single_list">
+                                            <div class="item">
+                                                <a class="title" href="#">Bachelor in Accounting</a>
+                                                <span class="university">offered by : MSU University </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Fee: MYR 31,071.00</span>
+                                                <i class="far fa-plus list_plus"></i>
+                                            </div>
+                                            <div class="item">
+                                                <span>Level:
+                                                    Bachelor Degree</span>
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <nav class="wsus__pagination mt_50">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <i class="fas fa-chevron-double-left"></i> Previous
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    next <i class="fas fa-chevron-double-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0">3333</div>
+
+                            <div class="tab-pane fade" id="pills-contact2" role="tabpanel"
+                                aria-labelledby="pills-contact-tab2" tabindex="0">4444</div>
+
+                            <div class="tab-pane fade" id="pills-contact3" role="tabpanel"
+                                aria-labelledby="pills-contact-tab3" tabindex="0">5555</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="wsus__university_overview_filter mt_50">
+                <h3>Courses Filter</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" placeholder="Keyword Type ">
+                    </div>
+                    <div class="col-xl-4">
+                        <select id="select_js3">
+                            <option value="">study field</option>
+                            <option value="">Red</option>
+                            <option value="">Black</option>
+                            <option value="">Orange</option>
+                            <option value="">Rose Gold</option>
+                            <option value="">Pink</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-4">
+                        <select id="select_js2">
+                            <option value="">study level</option>
+                            <option value="">Red</option>
+                            <option value="">Black</option>
+                            <option value="">Orange</option>
+                            <option value="">Rose Gold</option>
+                            <option value="">Pink</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-4">
+                        <button type="submit">fond course</button>
+                    </div>
+                </div>
+            </form>
+            <div class="wsus__university_overview_course">
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--============================
+        UNIVERSITY OVERVIEW END
+    =============================-->
+
+
+    <!--============================
+        FOOTER START
+    =============================-->
+    <footer class="mt_70 pt_50 pb_50">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4">
+                    <div class="wsus__footer_info">
+                        <a class="footer_logo" href="#">
+                            <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+                        </a>
+                        <b>Since 2010</b>
+                        <p>Fincourse.net is a platform that enables lesser-known universities & colleges in Malaysia and
+                            international students to connect online simple and effective.</p>
+                        <div class="qr_code">
+                            <img src="images/QR_code.png" alt="QR code" class="img-fluid w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__footer_link">
+                        <h3>quock link</h3>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">univeersity</a></li>
+                            <li><a href="#">browse courses</a></li>
+                            <li><a href="#">helo Desk</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__footer_link">
+                        <h3>university</h3>
+                        <ul>
+                            <li><a href="#">Stanford University</a></li>
+                            <li><a href="#">University of Cambridge</a></li>
+                            <li><a href="#">BRAC University</a></li>
+                            <li><a href="#">dhaka university</a></li>
+                            <li><a href="#">North South University</a></li>
+                            <li><a href="#">Asian university</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="wsus__footer_subscribe">
+                        <h3>Subscribe our news letter</h3>
+                        <form>
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <h4>follow us:</h4>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--============================
+        FOOTER END
+    =============================-->
+
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!--radial progress js-->
+    <script src="js/percircle.js"></script>
+    <!--barfiller js-->
+    <script src="js/progress-bar.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
