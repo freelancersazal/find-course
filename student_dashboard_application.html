@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Find Course</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/percircle.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!--============================
+        MENU START
+    =============================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Brows by Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">University</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help Desk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                </ul>
+
+                <ul class="wsus__menu_icon d-flex flex-wrap">
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fas fa-exclamation"></i></a></li>
+                    <li>
+                        <a href="#">
+                            <img src="images/user.png" alt="user" class="img-fluid w-100">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--============================
+        MENU END
+    =============================-->
+
+
+    <!--============================
+        DASHBOARD START
+    =============================-->
+    <section class="wsus__dashboard">
+        <div class="container-fluid dashboard_content_area">
+            <div class="wsus__dashboard_sidebar pt_70">
+                <ul class="wsus__dashboard_menu">
+                    <li><a href="student_dashboard.html"><i class="fas fa-th"></i> dashboard</a></li>
+                    <li><a href="student_dashboard_profile.html"><i class="fas fa-user"></i> my profile</a></li>
+                    <li><a class="active" href="student_dashboard_application.html"><i
+                                class="fal fa-clipboard-list"></i> my
+                            application</a></li>
+                    <li><a href="#"><i class="far fa-heart"></i> Shortlisted</a></li>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Browse courses & Apply</a></li>
+                    <li><a href="#"><i class="fal fa-university"></i> Browse University & Apply</a></li>
+                    <li><a href="#"><i class="fas fa-user-shield"></i> agent portal <span><i
+                                    class="fas fa-sort-down"></i></span></a>
+                        <ul class="wsus__dash_droap_menu">
+                            <li><a class="active" href="#">dashboard agent</a></li>
+                            <li><a href="#">student details</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sign_out" href="#">sign out</a></li>
+                </ul>
+            </div>
+            <div class="wsus__dashboard_content mt_70">
+                <div class="container-fluid">
+                    <h3><span><i class="far fa-long-arrow-left"></i></span> dashboard</h3>
+                    <div class="wsus__dashboard__text wsus__dashboard__application">
+                        <h4>Application Status</h4>
+
+                        <div class="wsus__result_offer_status_area mt_70">
+                            <div class="row justify-content-between">
+                                <div class="col-xl-4">
+                                    <div class="wsus__result_offer_status">
+                                        <h3>offer letter status</h3>
+                                        <div id="dgreencircle" data-percent="66" class="big"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-7">
+                                    <div class="wsus__result_offer_summary">
+                                        <h3>summary</h3>
+                                        <ul>
+                                            <li><span>name</span> Demo Name Demo Name</li>
+                                            <li><span>user ID</span> PK00001</li>
+                                            <li><span>passport no</span> ABD6789K3</li>
+                                            <li><span>application status</span>
+                                                <b>In Progress with Univesity</b>
+                                            </li>
+                                            <li><span>Offer Letter</span> <a href="#">download</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wsus__result_visa_offer_status_area mt_70">
+                            <div class="row justify-content-between">
+                                <div class="col-xl-4">
+                                    <div class="wsus__result_offer_status">
+                                        <h3>VISA APPLICATION STATUS</h3>
+                                        <div class="progress-bar">
+                                            <div class="progress" data-percent="70" data-color="blue"><span>70%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7">
+                                    <div class="wsus__result_offer_summary">
+                                        <h3>summary</h3>
+                                        <ul>
+                                            <li><span>Documentation</span> In Compiling Process</li>
+                                            <li><span>application status</span>
+                                                <b>In Progress with EMGS</b>
+                                            </li>
+                                            <li><span>Tracking Link</span> <a href="#">click here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wsus__result_application_history mt_100">
+                            <h3>application</h3>
+                            <div class="table-responsive">
+                                <table class="result_history_table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="sl">no</th>
+                                            <th class="date">date</th>
+                                            <th class="status">status</th>
+                                            <th class="remark">remarks</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl"> 1</td>
+                                            <td class="date">4/11/2022</td>
+                                            <td class="status">In Progress With EMGS</td>
+                                            <td class="remark">Please Refer To The Tracking Link Above</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">2</td>
+                                            <td class="date">29/10/2022</td>
+                                            <td class="status">Offer Letter Complete</td>
+                                            <td class="remark">Download Availabe Please Refer To Above</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">3</td>
+                                            <td class="date">15/11/2022</td>
+                                            <td class="status">In Process With University</td>
+                                            <td class="remark">All Requirement Submitted To University</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl"> 4</td>
+                                            <td class="date">4/11/2022</td>
+                                            <td class="status">In Progress With EMGS</td>
+                                            <td class="remark">Please Refer To The Tracking Link Above</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">5</td>
+                                            <td class="date">29/10/2022</td>
+                                            <td class="status">Offer Letter Complete</td>
+                                            <td class="remark">Download Availabe Please Refer To Above</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">6</td>
+                                            <td class="date">15/11/2022</td>
+                                            <td class="status">In Process With University</td>
+                                            <td class="remark">All Requirement Submitted To University</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">7</td>
+                                            <td class="date">4/11/2022</td>
+                                            <td class="status">In Progress With EMGS</td>
+                                            <td class="remark">Please Refer To The Tracking Link Above</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">8</td>
+                                            <td class="date">29/10/2022</td>
+                                            <td class="status">Offer Letter Complete</td>
+                                            <td class="remark">Download Availabe Please Refer To Above</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sl">9</td>
+                                            <td class="date">15/11/2022</td>
+                                            <td class="status">In Process With University</td>
+                                            <td class="remark">All Requirement Submitted To University</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+        DASHBOARD END
+    =============================-->
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!--radial progress js-->
+    <script src="js/percircle.js"></script>
+    <!--barfiller js-->
+    <script src="js/progress-bar.js"></script>
+    <!--sticky sidebar js-->
+    <script src="js/sticky_sidebar.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

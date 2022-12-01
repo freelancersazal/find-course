@@ -478,6 +478,47 @@ button {
     padding: 0px 10px;
 }
 
+.wsus__menu_icon li a {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    background: var(--colorWhite);
+    margin-right: 10px;
+    border: 1px solid #eee;
+    font-size: 13px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__menu_icon li:last-child a {
+    line-height: initial;
+    margin-right: 0;
+    border: none;
+}
+
+.wsus__menu_icon li a:hover {
+    background: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.wsus__menu_icon li a img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 
 
 /* MENU END */
@@ -583,13 +624,13 @@ button {
 }
 
 .wsus__result_visa_offer_status_area h3 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 23px;
-    color: #e9ff00;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-size: 23px !important;
+    color: #e9ff00 !important;
     border-bottom: 2px solid #e9ff00;
     padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 
 .wsus__result_visa_offer_status_area ul li,
@@ -619,14 +660,15 @@ button {
 }
 
 .wsus__result_application_history h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 600;
+    text-transform: uppercase !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
     background: var(--colorPrimary);
-    color: var(--colorWhite);
+    color: var(--colorWhite) !important;
     padding: 10px 30px;
     border-radius: 20px;
     text-align: center;
+    display: block !important;
     margin-top: -60px;
 }
 
@@ -1511,17 +1553,6 @@ footer {
     margin-bottom: 15px;
 }
 
-
-
-
-
-
-
-
-.wsus__browse_course_review {}
-
-.wsus__course_review_list {}
-
 .wsus__course_review_list h3 {
     text-transform: capitalize;
     font-size: 25px;
@@ -1668,13 +1699,6 @@ footer {
     background: var(--colorBlack);
 }
 
-
-
-
-.wsus__browse_course_location {}
-
-.wsus__browse_course_location h3 {}
-
 .wsus__browse_course_location .location_box {
     display: flex;
     flex-wrap: wrap;
@@ -1709,20 +1733,6 @@ footer {
 .wsus__browse_course_location .text p {
     color: var(--colorBlack);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.wsus__university_overview_filter {}
 
 .wsus__university_overview_filter h3 {
     font-size: 20px;
@@ -1826,20 +1836,433 @@ footer {
     width: 20%;
 }
 
+/*===========================
+    UNIVERSITY OVERVIEW END
+===========================*/
+
+
+/*===========================
+    DASHBOARD START
+===========================*/
+.dashboard_content_area {
+    padding: 0;
+    display: flex;
+}
+
+.wsus__dashboard_sidebar {
+    width: 20%;
+    height: 100vh;
+    background: var(--colorPrimary);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.wsus__dashboard_menu {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.wsus__dashboard_menu li {
+    position: relative;
+}
+
+.wsus__dashboard_menu li a {
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    width: 100%;
+    border-bottom: 1px solid var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__dashboard_menu li a i {
+    width: 25px;
+}
+
+.wsus__dashboard_menu li a span {
+    float: right;
+}
+
+.wsus__dashboard_menu li:hover a,
+.wsus__dashboard_menu li a.active {
+    background: #2271fb;
+}
+
+.wsus__dashboard_menu li .sign_out {
+    text-align: center;
+    background: var(--colorWhite) !important;
+    color: var(--colorPrimary) !important;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 3px;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__dashboard_menu li .sign_out:hover {
+    color: var(--colorBlack) !important;
+}
+
+.wsus__dash_droap_menu {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    background: #2271fb;
+    padding: 15px 20px;
+    z-index: 1;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+}
+
+.wsus__dash_droap_menu li a {
+    padding: 10px 0px;
+    color: var(--colorWhite) !important;
+    border: none;
+}
+
+.wsus__dash_droap_menu li a:hover,
+.wsus__dash_droap_menu li a.active {
+    color: var(--colorBlack) !important;
+}
+
+.wsus__dashboard_menu li:hover .wsus__dash_droap_menu {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+.wsus__dashboard_content {
+    width: 80%;
+    padding: 20px;
+    margin-left: auto;
+}
+
+.wsus__dashboard_content h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wsus__dashboard_content h3 span {
+    background: var(--colorPrimary);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    color: var(--colorWhite);
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__dashboard_content h3 span:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__dashboard__text {
+    padding: 30px;
+    border: 1px solid #84b1ff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wsus__dashboard__text h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.wsus__dashboard__text .welcome {
+    border: 1px solid #84b1ff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.wsus__dashboard__text .welcome h5 {
+    color: var(--colorBlack);
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.wsus__dashboard__text .welcome p {
+    color: var(--colorBlack);
+}
+
+.wsus__dashboard__text .list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wsus__dashboard__text .list li {
+    width: 300px;
+    background: var(--colorPrimary);
+    margin-right: 30px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.wsus__dashboard__text .list li p {
+    color: var(--colorWhite);
+    font-weight: 600;
+}
+
+.wsus__dashboard__text .list li span {
+    display: block;
+    color: var(--colorWhite);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.wsus__dashboard__text_bottom {
+    margin: 80px 0px 50px 0px;
+    border-top: 2px solid #84b1ff;
+    padding-top: 20px;
+}
+
+.wsus__dashboard__text_bottom h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--colorPrimary);
+}
+
+.wsus__dashboard__text_bottom ul {
+    width: 70%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.wsus__dashboard__text_bottom ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.wsus__dashboard__text_bottom ul li span {
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    min-width: 140px;
+}
+
+.wsus__dashboard__text_bottom ul li input {
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+}
+
+.wsus__dashboard__text_bottom ul li button {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 4px;
+    width: 100%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__dashboard__text_bottom ul li button:hover {
+    background: var(--colorBlack);
+}
+
+/* dashboard application start */
+.wsus__dashboard__application h4 {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* dashboard application end */
+
+
+/* dashboard profile start */
+.wsus__dashboard__profile {
+    background: var(--colorWhite);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.wsus__dash_user_info_img {
+    padding: 50px;
+    background: var(--colorPrimary);
+    text-align: center;
+    border-radius: 5px;
+    /* margin: 15px; */
+}
+
+.wsus__dash_user_info_img img {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+}
+
+.wsus__dash_user_info_img h4 {
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.wsus__dash_user_info_text li,
+.wsus__dash_user_info_about li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    border-top: 1px solid #eee;
+    padding: 10px 0px;
+}
+
+.wsus__dash_user_info_text li span,
+.wsus__dash_user_info_about li span {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.wsus__dash_user_info_text {
+    border-bottom: 5px solid #eee;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.wsus__dash_user_info_text li:first-child {
+    border-top: 0;
+}
+
+.wsus__dash_user_info_text li:last-child,
+.wsus__dash_user_info_about li:last-child {
+    padding-bottom: 0;
+}
+
+.wsus__dash_user_info_about p {
+    color: var(--colorBlack);
+    margin: 15px 0px 30px 0px;
+}
+
+.wsus__dash_user_body_info {
+    border: 1px solid var(--colorPrimary);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wsus__dash_user_body_info h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    margin-bottom: 15px;
+}
+
+.wsus__dash_user_body_info h5 {
+    margin-bottom: 15px;
+}
+
+.wsus__dash_user_body_info ul {
+    margin-bottom: 33px;
+    border-bottom: 1px solid var(--colorPrimary);
+    padding-bottom: 30px;
+}
+
+.wsus__dash_user_body_info ul li {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+.wsus__dash_user_body_info ul li span {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.wsus__dash_user_body_info .wsus__dashboard__text_bottom {
+    margin: 0;
+    border-top: 0;
+    padding-top: 0;
+}
+
+
+
+
+/* dashboard profile end */
+
+
+
+
+
+
+
+
 
 
 
 
 
 /*===========================
-    UNIVERSITY OVERVIEW END
+    DASHBOARD END
 ===========================*/
-
-
-
-
-
-
 
 
 
