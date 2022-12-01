@@ -22,23 +22,24 @@ $(function () {
     });
 
 
-
     //=====RADIAL PROGRESS BAR=====
     $("[id$='circle']").percircle();
-
 
 
     //=====PROGRESS BAR=====
     $(".progress-bar").ProgressBar();
 
 
-
+    //=====COURSE LIST=====
     $(".list_plus").click(function () {
         $(".hidden_text").toggleClass("show");
     });
 
 
-
+    //*========STICKY SIDEBAR=======
+    $("#sticky_sidebar").stickit({
+        top: 90,
+    })
 
 
 });
