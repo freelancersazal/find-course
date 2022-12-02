@@ -1967,9 +1967,9 @@ footer {
     font-size: 20px;
     font-weight: 600;
     color: var(--colorBlack);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
     margin-bottom: 20px;
 }
 
@@ -1983,7 +1983,6 @@ footer {
     color: var(--colorWhite);
     font-size: 13px;
     margin-right: 10px;
-    margin-top: 2px;
     border-radius: 2px;
     cursor: pointer;
     transition: all linear .3s;
@@ -1991,6 +1990,24 @@ footer {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+}
+
+.wsus__dashboard_content h3 a {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    float: right;
+    transition: all linear .3s;
+}
+
+.wsus__dashboard_content h3 a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
 }
 
 .wsus__dashboard_content h3 span:hover {
@@ -2131,13 +2148,6 @@ footer {
 
 
 /* dashboard profile start */
-.wsus__dashboard__profile {
-    background: var(--colorWhite);
-    padding: 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 5px;
-}
-
 .wsus__dash_user_info_img {
     padding: 50px;
     background: var(--colorPrimary);
@@ -2175,6 +2185,11 @@ footer {
 .wsus__dash_user_info_about li span {
     color: var(--colorBlack);
     text-transform: capitalize;
+    max-width: 50%;
+}
+
+.wsus__dash_user_info_about li span:last-child {
+    /* text-align: right; */
 }
 
 .wsus__dash_user_info_text {
@@ -2197,13 +2212,15 @@ footer {
     margin: 15px 0px 30px 0px;
 }
 
-.wsus__dash_user_body_info {
+.wsus__dash_user_body_info,
+.wsus__dash_user_body_earning {
     border: 1px solid var(--colorPrimary);
     padding: 20px;
     border-radius: 10px;
 }
 
-.wsus__dash_user_body_info h4 {
+.wsus__dash_user_body_info h4,
+.wsus__dash_user_body_earning h4 {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 600;
@@ -2243,10 +2260,84 @@ footer {
     padding-top: 0;
 }
 
+.wsus__dash__earning_table table {
+    width: 100%;
+}
 
+.wsus__dash__earning_table table tr {
+    display: flex;
+    justify-content: space-between;
+}
 
+.wsus__dash__earning_table table th {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    font-weight: 600;
+}
+
+.wsus__dash__earning_table table td {
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    font-size: 15px;
+    font-weight: 400;
+    border-top: 1px solid #eee;
+}
+
+.wsus__dash__earning_table table tr th,
+.wsus__dash__earning_table table tr td {
+    padding: 10px 0px;
+}
+
+.wsus__dash__earning_table table .no {
+    width: 5%;
+}
+
+.wsus__dash__earning_table table .name {
+    width: 20%;
+}
+
+.wsus__dash__earning_table table .course {
+    width: 35%;
+}
+
+.wsus__dash__earning_table table .commition {
+    width: 20%;
+}
+
+.wsus__dash__earning_table table .status {
+    width: 20%;
+}
+
+.wsus__dash_user_body_earning .wsus__dashboard__text_bottom {
+    border-top: 1px solid var(--colorPrimary);
+}
 
 /* dashboard profile end */
+
+
+
+
+/* agent dashboard start */
+.wsus__agent_dashboard {}
+
+.wsus__agent_dashboard__text {}
+
+.wsus__agent_dashboard__sidebar {}
+
+
+
+
+
+
+
+
+
+
+
+
+/* agent dashboard end */
+
 
 
 
