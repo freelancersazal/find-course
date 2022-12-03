@@ -9,6 +9,11 @@ $(function () {
     $('#select_js3').niceSelect();
     $('#select_js4').niceSelect();
     $('#select_js5').niceSelect();
+    $('#select_js6').niceSelect();
+    $('#select_js7').niceSelect();
+    $('#select_js8').niceSelect();
+    $('#select_js9').niceSelect();
+    $('#select_js10').niceSelect();
 
 
 
@@ -39,9 +44,17 @@ $(function () {
     //*========STICKY SIDEBAR=======
     $("#sticky_sidebar").stickit({
         top: 90,
-    })
+    });
 
 
+    //=====DASHBOARD ADD STUDENT=====
+    $(".add_btn").click(function () {
+        $(".wsus__dashboard_content").addClass("show");
+    });
+
+    $(".back_btn").click(function () {
+        $(".wsus__dashboard_content").removeClass("show");
+    });
 
 
 

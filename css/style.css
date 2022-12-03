@@ -1240,6 +1240,7 @@ footer {
     text-align: center;
     border-right: 1px solid #ddd;
     width: 50%;
+    min-width: 160px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1834,6 +1835,7 @@ footer {
 .overview_course_table .fee,
 .overview_course_table .intakes {
     width: 20%;
+    min-width: 200px;
 }
 
 /*===========================
@@ -1967,9 +1969,6 @@ footer {
     font-size: 20px;
     font-weight: 600;
     color: var(--colorBlack);
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
     margin-bottom: 20px;
 }
 
@@ -2116,14 +2115,14 @@ footer {
 }
 
 .wsus__dashboard__text_bottom ul li button {
-    background: var(--colorPrimary);
-    color: var(--colorWhite);
-    text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 35px;
-    border-radius: 4px;
-    width: 100%;
+    background: var(--colorPrimary) !important;
+    color: var(--colorWhite) !important;
+    text-transform: capitalize !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 10px 35px !important;
+    border-radius: 4px !important;
+    width: 100% !important;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -2132,7 +2131,7 @@ footer {
 }
 
 .wsus__dashboard__text_bottom ul li button:hover {
-    background: var(--colorBlack);
+    background: var(--colorBlack) !important;
 }
 
 /* dashboard application start */
@@ -2188,10 +2187,6 @@ footer {
     max-width: 50%;
 }
 
-.wsus__dash_user_info_about li span:last-child {
-    /* text-align: right; */
-}
-
 .wsus__dash_user_info_text {
     border-bottom: 5px solid #eee;
     margin-bottom: 30px;
@@ -2212,6 +2207,24 @@ footer {
     margin: 15px 0px 30px 0px;
 }
 
+.wsus__agent_dashboard_tab_area .nav li button {
+    text-transform: capitalize;
+    color: var(--colorPrimary) !important;
+    background: var(--colorWhite) !important;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px !important;
+    padding: 8px 20px;
+}
+
+.wsus__agent_dashboard_tab_area .nav li button.active,
+.wsus__dash_user_body_text ul li button.active {
+    background: var(--colorPrimary) !important;
+    color: var(--colorWhite) !important;
+}
+
+
+.wsus__agent_dash_body_info,
 .wsus__dash_user_body_info,
 .wsus__dash_user_body_earning {
     border: 1px solid var(--colorPrimary);
@@ -2291,22 +2304,27 @@ footer {
 
 .wsus__dash__earning_table table .no {
     width: 5%;
+    min-width: 50px;
 }
 
 .wsus__dash__earning_table table .name {
     width: 20%;
+    min-width: 180px;
 }
 
 .wsus__dash__earning_table table .course {
     width: 35%;
+    min-width: 250px;
 }
 
 .wsus__dash__earning_table table .commition {
     width: 20%;
+    min-width: 165px;
 }
 
 .wsus__dash__earning_table table .status {
     width: 20%;
+    min-width: 170px;
 }
 
 .wsus__dash_user_body_earning .wsus__dashboard__text_bottom {
@@ -2316,14 +2334,462 @@ footer {
 /* dashboard profile end */
 
 
-
-
 /* agent dashboard start */
-.wsus__agent_dashboard {}
+.wsus__sidebar_item_box {
+    border: 1px solid var(--colorPrimary);
+    padding: 5px 15px;
+    position: relative;
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
 
-.wsus__agent_dashboard__text {}
+.wsus__sidebar_item_box::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 102%;
+    top: -1px;
+    right: -21px;
+    background: #ddd;
+    clip-path: polygon(0% 0%, 20% 0, 100% 50%, 20% 100%, 0 100%);
+}
 
-.wsus__agent_dashboard__sidebar {}
+.wsus__sidebar_item_box ul {
+    padding-left: 15px;
+}
+
+.wsus__sidebar_item_box ul li {
+    list-style: decimal;
+    color: var(--colorPrimary);
+}
+
+.wsus__sidebar_item_box ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0px;
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__sidebar_item_box ul li:hover,
+.wsus__sidebar_item_box ul li a:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__sidebar_item_bottom p {
+    color: var(--paraColor);
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 7px 0px;
+    margin-top: 35px;
+    margin-bottom: 27px;
+}
+
+.wsus__sidebar_item_bottom p span {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    min-width: 70px;
+    display: inline-block;
+}
+
+.wsus__sidebar_item_bottom h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.wsus__sidebar_item_bottom h6 {
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.wsus__agent_dash_body_info h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    margin-bottom: 15px;
+}
+
+.wsus__agent_dash_body_info h4 i {
+    margin-right: 5px;
+}
+
+.wsus__agent_dash_student_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wsus__agent_dash_student_top li {
+    width: 30%;
+}
+
+.wsus__agent_dash_student_top li .nice-select {
+    height: 37px;
+    line-height: 34px;
+    text-align: left !important;
+}
+
+.wsus__agent_dash_student_top .nice-select .option {
+    width: 100%;
+}
+
+.wsus__agent_dash_student_top li form {
+    position: relative;
+}
+
+.wsus__agent_dash_student_top li form input {
+    padding: 5px 20px;
+}
+
+.wsus__agent_dash_student_top li form button {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    color: var(--colorPrimary);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.table-responsive::-webkit-scrollbar {
+    scrollbar-width: thin !important;
+    background: #eee;
+    height: 8px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #adadad;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.wsus__dash_student_table table {
+    border-left: .5px solid #eee;
+    border-bottom: .5px solid #eee;
+}
+
+.wsus__dash_student_table table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wsus__dash_student_table table tr th,
+.wsus__dash_student_table table tr td {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--colorBlack);
+    padding: 12px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.wsus__dash_student_table table tr td {
+    font-weight: 400;
+}
+
+.wsus__dash_student_table table tr td a {
+    display: block;
+    width: 100%;
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__dash_student_table table tr td a:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__dash_student_table table .id,
+.wsus__dash_student_table table .actions {
+    min-width: 100px;
+    width: 10%;
+}
+
+.wsus__dash_student_table table .name,
+.wsus__dash_student_table table .task {
+    min-width: 200px;
+    width: 20%;
+}
+
+.wsus__dash_student_table table .created {
+    min-width: 120px;
+    width: 10%;
+}
+
+.wsus__dash_student_table table .phase {
+    min-width: 155px;
+    width: 10%;
+}
+
+.wsus__dash_student_table table .owner {
+    min-width: 160px;
+    width: 20%;
+}
+
+.wsus__dash_student_application {
+    border-top: 1px solid var(--colorPrimary);
+    border-bottom: 1px solid var(--colorPrimary);
+    margin: 30px 0px;
+    padding: 20px 0px;
+}
+
+.wsus__dash_student_application p {
+    color: var(--paraColor);
+}
+
+.wsus__agent_dash_student .wsus__dashboard__text_bottom {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wsus__add_student_form {
+    border: 1px solid var(--colorPrimary);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.wsus__add_student_form h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.wsus__add_student_form .back_btn {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__add_student_form .back_btn i {
+    margin-right: 5px;
+}
+
+.wsus__add_student_form .back_btn:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__add_student_form_sigle {
+    position: relative;
+    margin-top: 20px;
+}
+
+.wsus__add_student_form_sigle .icon {
+    position: absolute;
+    top: .5px;
+    left: .5px;
+    width: 44.5px;
+    line-height: 44px;
+    text-align: center;
+    height: 44.5px;
+    background: #eee;
+    color: var(--colorPrimary);
+    border-radius: 2px 0px 0px 2px;
+    border-right: 1px solid #ddd;
+    z-index: 1;
+}
+
+.wsus__add_student_form_sigle input {
+    border-color: #ddd;
+    padding-left: 64px;
+}
+
+.wsus__add_student_form_sigle .nice-select {
+    border: 1px solid #ddd !important;
+    height: 45.5px;
+    line-height: 40px;
+    margin-bottom: 0px;
+    text-align: left !important;
+    padding-left: 64px;
+}
+
+.wsus__add_student_form_sigle button {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__add_student_form_sigle button:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__dashboard_content.show .wsus__agent_dashboard_tab_area,
+.wsus__dashboard_content.show .add_btn {
+    display: none;
+}
+
+.wsus__dashboard_content.show .wsus__add_student_form {
+    display: block;
+}
+
+.wsus__agent_shortlist_table table {
+    border-left: 0.5px solid #eee;
+    border-bottom: 0.5px solid #eee;
+    width: 100%;
+}
+
+.wsus__agent_shortlist_table table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wsus__agent_shortlist_table table tr th,
+.wsus__agent_shortlist_table table tr td {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--colorBlack);
+    padding: 12px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.wsus__agent_shortlist_table table tr td {
+    font-weight: 400;
+}
+
+.wsus__agent_shortlist_table table .no {
+    min-width: 50px;
+    width: 5%;
+}
+
+.wsus__agent_shortlist_table table .name,
+.wsus__agent_shortlist_table table .apply {
+    min-width: 180px;
+    width: 25%;
+}
+
+.wsus__agent_shortlist_table table .fee {
+    min-width: 130px;
+    width: 15%;
+}
+
+.wsus__agent_shortlist_table table .status {
+    min-width: 144px;
+    width: 15%;
+}
+
+.wsus__agent_shortlist_table table .icon {
+    min-width: 130px;
+    width: 15%;
+    flex-direction: inherit;
+    align-items: center;
+    justify-content: start;
+}
+
+.wsus__agent_shortlist_table table .icon a {
+    border: 1px solid #ddd;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: var(--colorBlack);
+    margin-right: 10px;
+}
+
+.wsus__agent_shortlist_table .btn_area {
+    justify-content: end;
+    border-bottom: 1px solid var(--colorPrimary);
+    padding-bottom: 50px;
+}
+
+.wsus__agent_shortlist_table .btn_area li .search {
+    text-transform: capitalize;
+    font-size: 16px;
+    border: 1px solid var(--colorPrimary);
+    color: var(--colorPrimary);
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-right: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__agent_shortlist_table .btn_area li .search:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.wsus__agent_shortlist_table .btn_area li .form {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    padding: 6px 15px;
+    border-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__agent_shortlist_table .btn_area li .form:hover {
+    background: var(--colorBlack);
+}
+
+
+
+
 
 
 
@@ -2337,6 +2803,7 @@ footer {
 
 
 /* agent dashboard end */
+
 
 
 

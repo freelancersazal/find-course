@@ -86,8 +86,9 @@
                     <li><a href="#"><i class="fas fa-user-shield"></i> agent portal <span><i
                                     class="fas fa-sort-down"></i></span></a>
                         <ul class="wsus__dash_droap_menu">
-                            <li><a class="active" href="#">dashboard agent</a></li>
-                            <li><a href="#">student details</a></li>
+                            <li><a class="active" href="#"> agent dashboard</a></li>
+                            <li><a href="#">agent Information</a></li>
+                            <li><a href="#">agent profile</a></li>
                         </ul>
                     </li>
                     <li><a class="sign_out" href="#">sign out</a></li>
@@ -95,12 +96,447 @@
             </div>
             <div class="wsus__dashboard_content mt_70">
                 <div class="container-fluid">
-                    <h3><span><i class="far fa-long-arrow-left"></i></span> dashboard <a href="#">+ add student </a>
+                    <h3><span><i class="far fa-long-arrow-left"></i></span> dashboard <a class="add_btn" href="#">+ add
+                            student </a>
                     </h3>
                     <div class="wsus__agent_dashboard__text">
-                        <div class="wsus__agent_dashboard__sidebar">
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <div class="wsus__agent_dashboard__sidebar">
+                                    <div class="wsus__sidebar_item_box">
+                                        <ul>
+                                            <li><a href="#">Submitted to Findcourse</a></li>
+                                            <li><a href="#">Students not yet submitted</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="wsus__sidebar_item_box">
+                                        <ul>
+                                            <li><a href="#">Submitted to Findcourse</a></li>
+                                            <li><a href="#">Students not yet submitted</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="wsus__sidebar_item_box">
+                                        <ul>
+                                            <li><a href="#">Submitted to Findcourse</a></li>
+                                            <li><a href="#">Students not yet submitted</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="wsus__sidebar_item_box">
+                                        <ul>
+                                            <li><a href="#">Submitted to Findcourse</a></li>
+                                            <li><a href="#">Students not yet submitted</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="wsus__sidebar_item_bottom">
+                                        <p><span>Email</span> info@example.com</p>
+                                        <h4>My Consultant</h4>
+                                        <h6>ROYAAH SERVICES</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="wsus__agent_dashboard_text">
+                                    <div class="wsus__agent_dashboard_tab_area">
+                                        <ul class="nav nav-pills mb_25" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                    role="tab" aria-controls="pills-home" aria-selected="true">
+                                                    Students</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                                    aria-controls="pills-profile" aria-selected="false">
+                                                    Shortlist Courses</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab" tabindex="0">
+                                                <div class="wsus__agent_dash_body_info">
+                                                    <h4> <i class="fas fa-user"></i> My Student</h4>
+                                                    <div class="wsus__agent_dash_student">
+                                                        <ul class="wsus__agent_dash_student_top">
+                                                            <li>
+                                                                <select id="select_js">
+                                                                    <option value="">status</option>
+                                                                    <option value="">active</option>
+                                                                    <option value="">inactive</option>
+                                                                    <option value="">completed</option>
+                                                                </select>
+                                                            </li>
+                                                            <li>
+                                                                <select id="select_js2">
+                                                                    <option value=""> records per page </option>
+                                                                    <option value="">10</option>
+                                                                    <option value="">15</option>
+                                                                    <option value="">20</option>
+                                                                </select>
+                                                            </li>
+                                                            <li>
+                                                                <form>
+                                                                    <input type="text" placeholder="Search...">
+                                                                    <button type="submit"><i
+                                                                            class="far fa-search"></i></button>
+                                                                </form>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="wsus__dash_student_table">
 
+                                                            <div class="table-responsive">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="id">ID</th>
+                                                                            <th class="name">name</th>
+                                                                            <th class="created">Created At</th>
+                                                                            <th class="phase">Phase</th>
+                                                                            <th class="task">Task</th>
+                                                                            <th class="owner">Owner</th>
+                                                                            <th class="actions">Actions</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="id">72591</td>
+                                                                            <td class="name"><a href="#">mahamudul
+                                                                                    hassan sazal</a>
+                                                                            </td>
+                                                                            <td class="created">10 Sep 2022</td>
+                                                                            <td class="phase">Royaah Counsellor</td>
+                                                                            <td class="task">Counselling & Application
+                                                                            </td>
+                                                                            <td class="owner">Complete Study Preferences
+                                                                            </td>
+                                                                            <td class="actions">Royaah</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="id">72591</td>
+                                                                            <td class="name"><a href="#">sazal ahmed</a>
+                                                                            </td>
+                                                                            <td class="created">10 Sep 2022</td>
+                                                                            <td class="phase">Royaah Counsellor</td>
+                                                                            <td class="task">Counselling & Application
+                                                                            </td>
+                                                                            <td class="owner">Complete Study Preferences
+                                                                            </td>
+                                                                            <td class="actions">Royaah</td>
+                                                                        </tr>
+                                                                        <td class="id">72591</td>
+                                                                        <td class="name"><a href="#">mahamudul hassan
+                                                                                sazal</a>
+                                                                        </td>
+                                                                        <td class="created">10 Sep 2022</td>
+                                                                        <td class="phase">Royaah Counsellor</td>
+                                                                        <td class="task">Counselling & Application
+                                                                        </td>
+                                                                        <td class="owner">Complete Study Preferences
+                                                                        </td>
+                                                                        <td class="actions">Royaah</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="id">72591</td>
+                                                                            <td class="name"><a href="#">sazal ahmed</a>
+                                                                            </td>
+                                                                            <td class="created">10 Sep 2022</td>
+                                                                            <td class="phase">Royaah Counsellor</td>
+                                                                            <td class="task">Counselling & Application
+                                                                            </td>
+                                                                            <td class="owner">Complete Study Preferences
+                                                                            </td>
+                                                                            <td class="actions">Royaah</td>
+                                                                        </tr>
+                                                                        <td class="id">72591</td>
+                                                                        <td class="name"><a href="#">mahamudul hassan
+                                                                                sazal</a>
+                                                                        </td>
+                                                                        <td class="created">10 Sep 2022</td>
+                                                                        <td class="phase">Royaah Counsellor</td>
+                                                                        <td class="task">Counselling & Application
+                                                                        </td>
+                                                                        <td class="owner">Complete Study Preferences
+                                                                        </td>
+                                                                        <td class="actions">Royaah</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="id">72591</td>
+                                                                            <td class="name"><a href="#">sazal ahmed</a>
+                                                                            </td>
+                                                                            <td class="created">10 Sep 2022</td>
+                                                                            <td class="phase">Royaah Counsellor</td>
+                                                                            <td class="task">Counselling & Application
+                                                                            </td>
+                                                                            <td class="owner">Complete Study Preferences
+                                                                            </td>
+                                                                            <td class="actions">Royaah</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                            <nav class="wsus__pagination mt_20">
+                                                                <ul class="pagination justify-content-end">
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#"
+                                                                            aria-label="Previous">
+                                                                            <i class="fas fa-chevron-double-left"></i>
+                                                                            Previous
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#">1</a></li>
+                                                                    <li class="page-item"><a class="page-link active"
+                                                                            href="#">2</a></li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#">3</a></li>
+                                                                    <li class="page-item"><a class="page-link"
+                                                                            href="#">...</a></li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#" aria-label="Next">
+                                                                            next <i
+                                                                                class="fas fa-chevron-double-right"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+
+                                                        </div>
+                                                        <div class="wsus__dash_student_application">
+                                                            <h3>Applications</h3>
+                                                            <p>You will be able to track the student’s orders after the
+                                                                application has been submitted (at the ‘Review &
+                                                                Lodgement’phase).</p>
+                                                        </div>
+
+                                                        <div class="wsus__dashboard__text_bottom">
+                                                            <h5>EARN BY REFERRING OTHERS</h5>
+                                                            <form>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Referral Link</span>
+                                                                        <input type="text"
+                                                                            placeholder="https://findcourse.net/romain7837">
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Email invitation</span>
+                                                                        <input type="text"
+                                                                            placeholder="https://findcourse.net/romain7837">
+                                                                    </li>
+                                                                    <li><button type="submit">send mail</button></li>
+                                                                </ul>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                                <div class="wsus__agent_dash_body_info">
+                                                    <h4>Shortlist</h4>
+                                                    <div class="wsus__agent_shortlist_table mb_50">
+                                                        <div class="table-responsive">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="no">No.</th>
+                                                                        <th class="name">name</th>
+                                                                        <th class="apply">Course Applied</th>
+                                                                        <th class="fee">Tuition Fee $</th>
+                                                                        <th class="status">status</th>
+                                                                        <th class="icon">555555</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="no">1</td>
+                                                                        <td class="name">MSU University</td>
+                                                                        <td class="apply">Bachelor of Science in Finance
+                                                                        </td>
+                                                                        <td class="fee">12000.00 $</td>
+                                                                        <td class="status">Not Enrolled Yet </td>
+                                                                        <td class="icon">
+                                                                            <a href="#">Shortlist</a>
+                                                                            <span><i class="fas fa-heart"></i></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="no">1</td>
+                                                                        <td class="name">MSU University</td>
+                                                                        <td class="apply">Bachelor of Science in Finance
+                                                                        </td>
+                                                                        <td class="fee">12000.00 $</td>
+                                                                        <td class="status">Not Enrolled Yet </td>
+                                                                        <td class="icon">
+                                                                            <a href="#">Shortlist</a>
+                                                                            <span><i class="fas fa-heart"></i></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="no">1</td>
+                                                                        <td class="name">MSU University</td>
+                                                                        <td class="apply">Bachelor of Science in Finance
+                                                                        </td>
+                                                                        <td class="fee">12000.00 $</td>
+                                                                        <td class="status">Not Enrolled Yet </td>
+                                                                        <td class="icon">
+                                                                            <a href="#">Shortlist</a>
+                                                                            <span><i class="fas fa-heart"></i></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <ul class="btn_area d-flex mt_20">
+                                                            <li><a class="search" href="#">search course</a></li>
+                                                            <li><a class="form" href="#">application form</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <h4>saved courses</h4>
+                                                    <div class="wsus__agent_shortlist_table">
+                                                        <div class="table-responsive">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="no">No.</th>
+                                                                        <th class="name">name</th>
+                                                                        <th class="apply">Course Applied</th>
+                                                                        <th class="fee">Tuition Fee $</th>
+                                                                        <th class="status">status</th>
+                                                                        <th class="icon">555555</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="no">1</td>
+                                                                        <td class="name">MSU University</td>
+                                                                        <td class="apply">Bachelor of Science in Finance
+                                                                        </td>
+                                                                        <td class="fee">12000.00 $</td>
+                                                                        <td class="status">Not Enrolled Yet </td>
+                                                                        <td class="icon">
+                                                                            <a href="#">Shortlist</a>
+                                                                            <span><i class="fas fa-heart"></i></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="no">1</td>
+                                                                        <td class="name">MSU University</td>
+                                                                        <td class="apply">Bachelor of Science in Finance
+                                                                        </td>
+                                                                        <td class="fee">12000.00 $</td>
+                                                                        <td class="status">Not Enrolled Yet </td>
+                                                                        <td class="icon">
+                                                                            <a href="#">Shortlist</a>
+                                                                            <span><i class="fas fa-heart"></i></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wsus__add_student_form">
+                                        <span class="back_btn"><i class="fas fa-long-arrow-alt-left"></i> go back</span>
+                                        <h3>add student</h3>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="fas fa-user-tie"></i></span>
+                                                        <input type="text" placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="far fa-envelope"></i></span>
+                                                        <input type="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="far fa-phone-alt"></i></span>
+                                                        <input type="text" placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="fal fa-book"></i></span>
+                                                        <select id="select_js4">
+                                                            <option value=""> subject</option>
+                                                            <option value="">active</option>
+                                                            <option value="">inactive</option>
+                                                            <option value="">completed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="far fa-university"></i></span>
+                                                        <select id="select_js5">
+                                                            <option value=""> university</option>
+                                                            <option value="">active</option>
+                                                            <option value="">inactive</option>
+                                                            <option value="">completed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="fas fa-globe"></i></span>
+                                                        <select id="select_js6">
+                                                            <option value=""> countey</option>
+                                                            <option value="">active</option>
+                                                            <option value="">inactive</option>
+                                                            <option value="">completed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="far fa-city"></i></span>
+                                                        <select id="select_js7">
+                                                            <option value=""> city</option>
+                                                            <option value="">active</option>
+                                                            <option value="">inactive</option>
+                                                            <option value="">completed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="far fa-building"></i></span>
+                                                        <select id="select_js8">
+                                                            <option value=""> state</option>
+                                                            <option value="">active</option>
+                                                            <option value="">inactive</option>
+                                                            <option value="">completed</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="fas fa-tasks-alt"></i></span>
+                                                        <input type="text" placeholder="Zip">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                                                        <input type="text" placeholder="Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="wsus__add_student_form_sigle">
+                                                        <button type="submit">submit</button>
+                                                    </div>
+                                                </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
