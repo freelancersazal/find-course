@@ -57,7 +57,8 @@ $(function () {
     });
 
 
-
+    //===venobox.js===
+    $('.venobox').venobox();
 
 
 

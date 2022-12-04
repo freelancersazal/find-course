@@ -2207,6 +2207,54 @@ footer {
     margin: 15px 0px 30px 0px;
 }
 
+.wsus__dash_user_info_about .teacher_award {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-left: 1px solid #eee;
+}
+
+.wsus__dash_user_info_about .teacher_award li {
+    width: 33%;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 10px 0px !important;
+}
+
+.wsus__dash_user_info_about .teacher_award li p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: var(--colorPrimary);
+    font-size: 16px;
+}
+
+.wsus__dash_user_info_about .teacher_award li span {
+    display: block;
+    text-align: center;
+    min-width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--paraColor);
+    margin-bottom: 10px;
+}
+
+.wsus__dash_user_info_about .teacher_award li h5 {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
 .wsus__agent_dashboard_tab_area .nav li button {
     text-transform: capitalize;
     color: var(--colorPrimary) !important;
@@ -2793,6 +2841,51 @@ footer {
 
 
 
+.wsus__teacher_details {}
+
+.wsus__teacher_details h3 {}
+
+.wsus__teacher_details p {
+    color: var(--colorBlack);
+}
+
+.wsus__teacher_details .list {
+    margin-bottom: 50px;
+}
+
+.wsus__teacher_details .list li {
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 400;
+    list-style: decimal;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.wsus__teacher_details h5 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.wsus__teacher_details .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wsus__teacher_details .skills li {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    background: #ddd;
+    padding: 5px 20px 7px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
 
 
 
@@ -2800,18 +2893,423 @@ footer {
 
 
 
+.wsus__teacher_photos {}
 
+.wsus__teacher_photos .venobox {
+    display: block;
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.wsus__teacher_photos .venobox img {}
+
+.wsus__teacher_photos .venobox .overlay {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 10px;
+    background: #0000004a;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__teacher_photos .venobox .overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--colorWhite);
+    width: 35px;
+    height: 35px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: var(--colorBlack);
+}
+
+.wsus__teacher_photos .venobox:hover .overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
 
 /* agent dashboard end */
 
 
 
+/*===========================
+    DASHBOARD END
+===========================*/
+
+
+/*===========================
+    SING IN START
+===========================*/
+.wsus__signin,
+.wsus__signup,
+.wsus__signup_agent {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.wsus__signin_form {
+    padding: 49px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.wsus__signin_form .logo {
+    max-width: 200px;
+    margin-bottom: 35px;
+}
+
+.wsus__signin_form_single label {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.wsus__signin_form_single input {
+    border: 1px solid var(--colorPrimary);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.wsus__signin_form_single button {
+    width: 100%;
+    background: #005cff;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    border-radius: 3px;
+    padding: 10px 0px;
+    font-weight: 600;
+    margin: 20px 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signin_form_single button:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__signin_form_single .form-check input {
+    padding: 0;
+    border-radius: 2px;
+}
+
+.wsus__signin_form_single .form-check label {
+    margin: 0;
+}
+
+.wsus__signin_form .or {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    color: var(--colorBlack);
+    font-weight: 600;
+    position: relative;
+    margin: 20px 0px 35px 0px;
+}
+
+.wsus__signin_form .or::after,
+.wsus__signin_form .or::before {
+    position: absolute;
+    content: "";
+    width: 42%;
+    height: 1px;
+    background: var(--colorPrimary);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.wsus__signin_form .or::before {
+    right: auto;
+    left: 0;
+}
+
+.wsus__signin_form h5 {
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.wsus__signin_form .social_link {
+    justify-content: center;
+}
+
+.wsus__signin_form .social_link li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #005cff0f;
+    color: var(--colorBlack);
+    margin: 0px 5px;
+    border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signin_form .social_link li a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.wsus__signin_form .signup {
+    text-align: center;
+    color: var(--colorBlack);
+    margin-top: 35px;
+}
+
+.wsus__signin_form .signup a {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signin_form .signup a:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__signin_img {
+    height: 100%;
+}
+
+.wsus__signin_form_single .nice-select {
+    text-align: left !important;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+}
+
+/*===========================
+    SING IN END
+===========================*/
+
+
+/*===========================
+    SIGN UP START
+===========================*/
+.wsus__signup {}
+
+.wsus__signup_text {}
+
+.wsus__signup_text h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    margin-bottom: 20px;
+}
+
+.wsus__signup_text ul {
+    justify-content: space-between;
+}
+
+.wsus__signup_text ul li {
+    width: 32%;
+}
+
+.wsus__signup_text ul li a {
+    overflow: hidden;
+    border: 1px solid #eee;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+.wsus__signup_text ul li a img {
+    width: 120px !important;
+    height: 120px !important;
+}
+
+.wsus__signup_text ul li a h5 {
+    margin: 15px 0px 0px 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signup_text ul li a:hover h5 {
+    color: var(--colorPrimary);
+}
+
+.wsus__signup_form .signup {
+    margin: 0;
+    text-align: left;
+}
+
+.wsus__signup_form button {
+    margin-top: 0;
+}
+
+.wsus__signup_form h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    margin-bottom: 25px;
+}
+
+/*===========================
+    SIGN UP END
+===========================*/
+
+
+/*===========================
+    SIGNUP AGENT START
+===========================*/
+.wsus__signup_agent {}
+
+.wsus__signup_agent_text {}
+
+.wsus__signup_agent_text_top {}
+
+.wsus__signup_agent_text_top ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.wsus__signup_agent_text_top ul li {
+    width: 33.33%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    border-right: 1px solid #ddd;
+    padding: 5px 0px;
+}
+
+.wsus__signup_agent_text_top ul li:last-child {
+    border-right: 0;
+}
+
+.wsus__signup_agent_text_top ul li.active {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.wsus__signup_agent_text_top p {
+    color: var(--colorBlack);
+    text-align: left;
+    padding-left: 35px;
+    position: relative;
+    margin: 25px 0px;
+}
+
+.wsus__signup_agent_text_top p::after {
+    position: absolute;
+    content: "!";
+    color: #979494;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    transform: translateY(-50%) rotate(180deg);
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid #979494;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -moz-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    -o-transform: translateY(-50%) rotate(180deg);
+}
 
 
 
+.wsus__signup_agent_text h3 {
+    color: var(--colorBlack);
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
+.wsus__signup_agent_text .upload {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--colorPrimary);
+    padding-bottom: 10px;
+}
 
+.wsus__signup_agent_text .upload p {
+    color: var(--paraColor);
+}
 
+.wsus__signup_agent_text .upload p i {
+    margin-right: 10px;
+}
+
+.wsus__signup_agent_text .upload label {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 7px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
 
 
 
@@ -2819,8 +3317,9 @@ footer {
 
 
 /*===========================
-    DASHBOARD END
+    SIGNUP AGENT END
 ===========================*/
+
 
 
 
