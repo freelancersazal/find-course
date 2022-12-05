@@ -66,27 +66,53 @@
                         </a>
                         <div class="wsus__signup_agent_text_top">
                             <ul>
-                                <li class="active">Contact Informatioin</li>
-                                <li>Business Information</li>
-                                <li>Recruiter Details</li>
+                                <li class="done">Contact Informatioin</li>
+                                <li class="done">Business Information</li>
+                                <li class="active">Recruiter Details</li>
                             </ul>
-                            <p>Make sure the business owner fills out this form and the details below match what is
-                                listed on the company's registration certificate.</p>
+                            <p>Ensure that the details here match with those on your company registration certificate.
+                            </p>
                         </div>
                         <form>
-                            <h3>Business Certificate</h3>
-                            <div class="upload">
-                                <p><i class="fas fa-cloud-upload"></i> Drag and Drop, or Upload your file </p>
-                                <input type="file" id="upload" hidden>
-                                <label for="upload">upload</label>
+                            <h3>Business Information</h3>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <input type="text" placeholder="Country">
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text" placeholder="Value">
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text" placeholder="Country">
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text" placeholder="Value">
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text" placeholder="Country">
+                                </div>
+                                <div class="col-xl-6">
+                                    <input type="text" placeholder="Value">
+                                </div>
+                                <div class="col-xl-12">
+                                    <a class="add_country" href="#"><i class="fal fa-plus-square"></i> add country</a>
+                                </div>
+                                <div class="col-xl-12">
+                                    <textarea rows="5" placeholder="Additional Comment (Optional)"></textarea>
+                                </div>
                             </div>
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="Phone Number">
-                            <input type="text" placeholder="How did you find about findcourse.net">
-                            <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="sigup_agent_2.html">next</a></li>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I declare that the information contained in this application and all supporting
+                                    documentation is true and correct.
+                                </label>
+                            </div>
+
+                            <ul class="d-flex flex-wrap justify-content-between">
+                                <li><a href="sigup_agent_2.html">back</a></li>
+                                <li><button type="submit">submit</button></li>
                             </ul>
                         </form>
 

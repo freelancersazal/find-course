@@ -3218,13 +3218,14 @@ footer {
 }
 
 .wsus__signup_agent_text_top ul li {
-    width: 33.33%;
+    width: 33.33% !important;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     color: var(--colorBlack);
     border-right: 1px solid #ddd;
     padding: 5px 0px;
+    position: relative;
 }
 
 .wsus__signup_agent_text_top ul li:last-child {
@@ -3234,6 +3235,37 @@ footer {
 .wsus__signup_agent_text_top ul li.active {
     background: var(--colorPrimary);
     color: var(--colorWhite);
+}
+
+.wsus__signup_agent_text_top ul li.done::after {
+    position: absolute;
+    content: "\f00c";
+    color: var(--colorWhite);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    top: 51%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    background: var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__signup_agent_text_top p {
@@ -3268,8 +3300,6 @@ footer {
     -o-transform: translateY(-50%) rotate(180deg);
 }
 
-
-
 .wsus__signup_agent_text h3 {
     color: var(--colorBlack);
     text-align: left;
@@ -3285,6 +3315,7 @@ footer {
     justify-content: space-between;
     border-bottom: 1px dashed var(--colorPrimary);
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .wsus__signup_agent_text .upload p {
@@ -3310,6 +3341,132 @@ footer {
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
 }
+
+.wsus__signup_agent_text input {
+    margin-bottom: 20px;
+}
+
+.wsus__signup_agent_text ul li {
+    width: 48.5%;
+}
+
+.wsus__signup_agent_text ul li a,
+.wsus__signup_agent_text ul li button {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 7px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signup_agent_text ul li a:hover,
+.wsus__signup_agent_text ul li button:hover {
+    background: var(--colorBlack);
+}
+
+
+.wsus__signup_agent_text .add_country {
+    float: left;
+    margin-bottom: 15px;
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 7px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signup_agent_text .add_country i {
+    margin-right: 5px;
+}
+
+.wsus__signup_agent_text .add_country:hover {
+    background: var(--colorBlack);
+}
+
+.wsus__signup_agent_text textarea {
+    margin-bottom: 15px;
+}
+
+
+.wsus__signup_agent_text .form-check {
+    text-align: left;
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.wsus__signup_agent_text .form-check input {
+    padding: 0;
+    border-radius: 2px;
+}
+
+.wsus__signup_agent_done {
+    text-align: center;
+}
+
+.wsus__sign_up_done_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.wsus__signup_agent_done h5 {
+    margin-top: 50px;
+}
+
+.wsus__signup_agent_done p {
+    color: var(--paraColor);
+    margin-bottom: 45px;
+}
+
+.wsus__signup_agent_done p span {
+    font-weight: 600;
+    font-variant-east-asian: 14px;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.wsus__signup_agent_done .go_home {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 7px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__signup_agent_done .go_home:hover {
+    background: var(--colorBlack);
+}
+
+
 
 
 
