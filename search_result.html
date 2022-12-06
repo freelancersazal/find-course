@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Find Course</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/percircle.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+    <!--============================
+        MENU START
+    =============================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="browse_course.html">Brows by Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="browse_university.html">University</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help_desk.html">Help Desk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
+                        <div class="wsus__search_form">
+                            <form>
+                                <span class="close_search"><i class="far fa-times"></i></span>
+                                <input type="text" placeholder="Search . . .">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <select id="select_js">
+                    <option value="">English</option>
+                    <option value="">Arabic</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <!--============================
+        MENU END
+    =============================-->
+
+
+    <!--============================
+        SEARCH RESULT START
+    =============================-->
+    <section class="wsus__search_result mt_70">
+        <div class="wsus__search_result_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wsus__search_result_top_text">
+                            <h3>Search Results <span>250 courses found</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wsus__search_result_area mt_70">
+                        <div class="table-responsive">
+                            <table class="wsus__search_result_table">
+                                <tbody>
+                                    <tr>
+                                        <th class="no">no</th>
+                                        <th class="logo">logo</th>
+                                        <th class="university">university</th>
+                                        <th class="course">courses</th>
+                                        <th class="type">Uni Type</th>
+                                        <th class="fee">Total Fee</th>
+                                        <th class="intakes">Intakes</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>1</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>2</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>3</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>4</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>5</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>6</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>7</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>8</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>9</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>10</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">
+                                            <p>11</p>
+                                        </td>
+                                        <td class="logo">
+                                            <img src="images/uni_logo.png" alt="logo" class="img-fluid w-100">
+                                        </td>
+                                        <td class="university">
+                                            <p>Management & Science University – MSU</p>
+                                        </td>
+                                        <td class="course"><a href="#">Master in Accounting/Finance (By Research)</a>
+                                        </td>
+                                        <td class="type">
+                                            <p>Private University</p>
+                                        </td>
+                                        <td class="fee">
+                                            <p>MYR 31,071.00</p>
+                                        </td>
+                                        <td class="intakes">
+                                            <p>Feburary</p>
+                                            <p>September</p>
+                                            <p>October</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav class="wsus__pagination mt_25">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i class="fas fa-chevron-double-left"></i> Previous
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        next <i class="fas fa-chevron-double-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+        SEARCH RESULT END
+    =============================-->
+
+
+    <!--============================
+        FOOTER START
+    =============================-->
+    <footer class="mt_70 pt_50 pb_50">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4">
+                    <div class="wsus__footer_info">
+                        <a class="footer_logo" href="#">
+                            <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+                        </a>
+                        <b>Since 2010</b>
+                        <p>Fincourse.net is a platform that enables lesser-known universities & colleges in Malaysia and
+                            international students to connect online simple and effective.</p>
+                        <div class="qr_code">
+                            <img src="images/QR_code.png" alt="QR code" class="img-fluid w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__footer_link">
+                        <h3>quock link</h3>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">univeersity</a></li>
+                            <li><a href="#">browse courses</a></li>
+                            <li><a href="#">helo Desk</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__footer_link">
+                        <h3>university</h3>
+                        <ul>
+                            <li><a href="#">Stanford University</a></li>
+                            <li><a href="#">University of Cambridge</a></li>
+                            <li><a href="#">BRAC University</a></li>
+                            <li><a href="#">dhaka university</a></li>
+                            <li><a href="#">North South University</a></li>
+                            <li><a href="#">Asian university</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="wsus__footer_subscribe">
+                        <h3>Subscribe our news letter</h3>
+                        <form>
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <h4>follow us:</h4>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--============================
+        FOOTER END
+    =============================-->
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!--percircle js-->
+    <script src="js/percircle.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progress-bar.js"></script>
+    <!--sticky_sidebar js-->
+    <script src="js/sticky_sidebar.js"></script>
+    <!--venobox js-->
+    <script src="js/venobox.min.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

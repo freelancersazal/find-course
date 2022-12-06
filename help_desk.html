@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>Find Course</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/percircle.css">
+    <link rel="stylesheet" href="css/progress-bar.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!--============================
+        MENU START
+    =============================-->
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="browse_course.html">Brows by Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="browse_university.html">University</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help_desk.html">Help Desk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
+                        <div class="wsus__search_form">
+                            <form>
+                                <span class="close_search"><i class="far fa-times"></i></span>
+                                <input type="text" placeholder="Search . . .">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <select id="select_js">
+                    <option value="">English</option>
+                    <option value="">Arabic</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <!--============================
+        MENU END
+    =============================-->
+
+
+    <!--============================
+        HELP DESK START
+    =============================-->
+    <section class="wsus__help_desk mt_65">
+        <div class="wsus__help_desk_banner">
+            <img src="images/help_banner.png" alt="help banner" class="img-fluid w-100">
+        </div>
+
+        <div class="container">
+            <div class="wsus__help_desk_faq mt_70">
+                <div class="row">
+                    <div class="col-xl-8 m-auto">
+                        <h3>Frequently Ask & Questions</h3>
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">GENERAL</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">COURSES</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">TEACHERS</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-disabled" type="button" role="tab"
+                                    aria-controls="pills-disabled" aria-selected="false">Event</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-disabled-tab2" data-bs-toggle="pill"
+                                    data-bs-target="#pills-disabled2" type="button" role="tab"
+                                    aria-controls="pills-disabled2" aria-selected="false">OTHERS</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-12">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne1">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        How to Register in Findcourse.net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree2">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree2"
+                                                        aria-expanded="false" aria-controls="collapseThree2">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree2" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                                                        aria-expanded="false" aria-controls="collapseThree3">
+                                                        How To Register In Findcourse.Net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree4">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree4"
+                                                        aria-expanded="false" aria-controls="collapseThree4">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree4" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree4" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree5">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree5"
+                                                        aria-expanded="false" aria-controls="collapseThree5">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree5" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree5" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne1">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        How to Register in Findcourse.net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree2">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree2"
+                                                        aria-expanded="false" aria-controls="collapseThree2">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree2" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                                                        aria-expanded="false" aria-controls="collapseThree3">
+                                                        How To Register In Findcourse.Net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree4">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree4"
+                                                        aria-expanded="false" aria-controls="collapseThree4">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree4" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree4" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree5">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree5"
+                                                        aria-expanded="false" aria-controls="collapseThree5">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree5" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree5" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne1">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        How to Register in Findcourse.net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree2">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree2"
+                                                        aria-expanded="false" aria-controls="collapseThree2">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree2" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                                                        aria-expanded="false" aria-controls="collapseThree3">
+                                                        How To Register In Findcourse.Net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree4">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree4"
+                                                        aria-expanded="false" aria-controls="collapseThree4">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree4" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree4" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree5">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree5"
+                                                        aria-expanded="false" aria-controls="collapseThree5">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree5" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree5" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                aria-labelledby="pills-disabled-tab" tabindex="0">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne1">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        How to Register in Findcourse.net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree2">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree2"
+                                                        aria-expanded="false" aria-controls="collapseThree2">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree2" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                                                        aria-expanded="false" aria-controls="collapseThree3">
+                                                        How To Register In Findcourse.Net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree4">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree4"
+                                                        aria-expanded="false" aria-controls="collapseThree4">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree4" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree4" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree5">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree5"
+                                                        aria-expanded="false" aria-controls="collapseThree5">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree5" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree5" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-disabled2" role="tabpanel"
+                                aria-labelledby="pills-disabled-tab2" tabindex="0">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne1">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne1"
+                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                        What is Findcours.net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne1" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        How to Register in Findcourse.net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree2">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree2"
+                                                        aria-expanded="false" aria-controls="collapseThree2">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree2" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                                                        aria-expanded="false" aria-controls="collapseThree3">
+                                                        How To Register In Findcourse.Net ?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree4">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree4"
+                                                        aria-expanded="false" aria-controls="collapseThree4">
+                                                        Adipiscing Diamet Nonnumy Nibh Euismod?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree4" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree4" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree5">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree5"
+                                                        aria-expanded="false" aria-controls="collapseThree5">
+                                                        What Is Findcours.Net Courses?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree5" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree5" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                            aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+        HELP DESK END
+    =============================-->
+
+
+    <!--============================
+        FOOTER START
+    =============================-->
+    <footer class="mt_70 pt_50 pb_50">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4">
+                    <div class="wsus__footer_info">
+                        <a class="footer_logo" href="#">
+                            <img src="images/logo.png" alt="logo" class="img-fluid w-100">
+                        </a>
+                        <b>Since 2010</b>
+                        <p>Fincourse.net is a platform that enables lesser-known universities & colleges in Malaysia and
+                            international students to connect online simple and effective.</p>
+                        <div class="qr_code">
+                            <img src="images/QR_code.png" alt="QR code" class="img-fluid w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__footer_link">
+                        <h3>quock link</h3>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">univeersity</a></li>
+                            <li><a href="#">browse courses</a></li>
+                            <li><a href="#">helo Desk</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__footer_link">
+                        <h3>university</h3>
+                        <ul>
+                            <li><a href="#">Stanford University</a></li>
+                            <li><a href="#">University of Cambridge</a></li>
+                            <li><a href="#">BRAC University</a></li>
+                            <li><a href="#">dhaka university</a></li>
+                            <li><a href="#">North South University</a></li>
+                            <li><a href="#">Asian university</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="wsus__footer_subscribe">
+                        <h3>Subscribe our news letter</h3>
+                        <form>
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <h4>follow us:</h4>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--============================
+        FOOTER END
+    =============================-->
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!--percircle js-->
+    <script src="js/percircle.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progress-bar.js"></script>
+    <!--sticky_sidebar js-->
+    <script src="js/sticky_sidebar.js"></script>
+    <!--venobox js-->
+    <script src="js/venobox.min.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
